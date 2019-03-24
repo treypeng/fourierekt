@@ -1,0 +1,34 @@
+
+<html>
+
+<head>
+  <title>FourieRekt v0.1</title>
+  <style type="text/css">
+    #chart {
+      width: 640px;
+      height: 480px;
+      opacity: 1;
+    }
+    #prices {
+      width: 100%;
+      height: 40px;
+      font-family: courier;
+    }
+  </style>
+</head>
+
+
+<body>
+  <canvas id="chart" width="640" height="480"></canvas>
+  <div id="prices"></div>
+  <div id="options">
+    Pair: <input type="text" id="inputPair" value="USDT-BTC"/>
+    Interval: <input type="text" style="width: 20px" id="inputInterval" value="1"/>
+    <button type="button" id="btnExtrap">Extrapolate</button>
+  </div>
+</body>
+
+<script src="./extrapolate.js"></script>
+<script src="./main.js"></script>
+
+</html>
